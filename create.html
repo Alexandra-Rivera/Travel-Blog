@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Blog</title>
+    <link rel="stylesheet" href="./src/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./src/img/montana.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header>
+      <nav id="nav-section">
+        <div class="logo-container">
+          <img src="./src/img/montana.png" class="logo" alt="logo" />
+          <h1 class="main-title">Travel - Blog</h1>
+        </div>
+  
+        <div class="nav-container">
+          <ul>
+            <li><a href="./index.html">Publicaciones</a></li>
+            <li><a href="./create.html">Crear Post</a></li>
+            <li><a href="./categorias.html">Categorias</a></li>
+            <li><a href="./about.html">Sobre el blog</a></li>
+          </ul>
+  
+          <img src="./src/img/20241021_100537.jpg" class="avatar" alt="picture" />
+        </div>
+  
+        <div class="hamburger-menu" onclick="visibleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+  
+        <div id="drawer-menu" onclick="toggleMenu()">
+          <ul>
+            <li><a href="./index.html">Publicaciones</a></li>
+            <li><a href="./create.html">Crear Post</a></li>
+            <li><a href="./categorias.html">Categorias</a></li>
+            <li><a href="./about.html">Sobre el blog</a></li>
+          </ul>
+  
+            <button id="salir-button" onclick="hideMenu()">Salir</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Create form -->
+    <form action="" id="create-form">
+      <label for="">Titulo: </label>
+      <input type="text" />
+      <label for="">Contenido: </label>
+      <textarea name="" id=""></textarea>
+
+      <p>Imagen principal del post</p>
+      <input type="file" />
+      <p>Imágenes para la galería</p>
+      <input type="file" />
+    </form>
+
+
+    <script>
+      const drawerMenu = document.getElementById("drawer-menu");
+
+      function visibleMenu() {
+        drawerMenu.style.visibility = "visible";
+      }
+      function hideMenu() {
+        drawerMenu.style.visibility = "hidden";
+      }
+    </script>
+  </body>
+</html>

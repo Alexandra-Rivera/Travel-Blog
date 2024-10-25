@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Blog</title>
+    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="shortcut icon" href="./src/img/montana.ico" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+      <nav id="nav-section">
+        <div class="logo-container">
+          <img src="./src/img/montana.png" class="logo" alt="logo" />
+          <h1 class="main-title">Travel Blog</h1>
+        </div>
+  
+        <div class="nav-container">
+          <ul>
+            <li><a href="./index.html">Publicaciones</a></li>
+            <li><a href="./create.html">Crear Post</a></li>
+            <li><a href="./categorias.html">Categorias</a></li>
+            <li><a href="./about.html">Sobre el blog</a></li>
+          </ul>
+  
+          <img src="./src/img/20241021_100537.jpg" class="avatar" alt="picture" />
+        </div>
+  
+        <div class="hamburger-menu" onclick="visibleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+  
+        <div id="drawer-menu" onclick="toggleMenu()">
+          <ul>
+            <li><a href="./index.html">Publicaciones</a></li>
+            <li><a href="./create.html">Crear Post</a></li>
+            <li><a href="./categorias.html">Categorias</a></li>
+            <li><a href="./about.html">Sobre el blog</a></li>
+          </ul>
+  
+            <button id="salir-button" onclick="hideMenu()">Salir</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <section>
+
+      <div class="card">
+        <div class="card-body">
+
+          <div class="images">
+            <img src="./src/img/salvadorianFamilyTrip.jpg" alt="foto-viaje" class="post-image">
+          </div>
+
+          <div class="card-content">
+            <h3 class="card-title">Viaje a la India con mi familia marcó un fin de semana maravilloso</h3>
+            <span id="username">Bloggers: Rivera Family Blog,</span>
+            <span id="fecha">Octubre 25, 2024</span>
+  
+            <hr>
+  
+            <p class="card-text">¡Hola a todos los amantes de los viajes! Hoy quiero compartir con ustedes una experiencia que superó todas mis expectativas: un viaje a la India en familia. Si estás pensando en un destino exótico y lleno de contrastes, ¡la India es el lugar perfecto!</p>
+          </div>
+
+          <a href="./post.html" id="ver-mas-button">Ver más</a>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const drawerMenu = document.getElementById("drawer-menu");
+
+      function visibleMenu() {
+        drawerMenu.style.visibility = "visible";
+      }
+      function hideMenu() {
+        drawerMenu.style.visibility = "hidden";
+      }
+    </script>
+  </body>
+</html>

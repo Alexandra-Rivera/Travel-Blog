@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Blog</title>
+    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="shortcut icon" href="./src/img/montana.ico" type="image/x-icon">
+  </head>
+  <body>
+    <!-- Page Header -->
+    <header>
+        <nav id="nav-section">
+          <div class="logo-container">
+            <img src="./src/img/montana.png" class="logo" alt="logo" />
+            <h1 class="main-title">Travel - Blog</h1>
+          </div>
+    
+          <div class="nav-container">
+            <ul>
+              <li><a href="./index.html">Publicaciones</a></li>
+              <li><a href="./create.html">Crear Post</a></li>
+              <li><a href="./categorias.html">Categorias</a></li>
+              <li><a href="./about.html">Sobre el blog</a></li>
+            </ul>
+    
+            <img src="./src/img/20241021_100537.jpg" class="avatar" alt="picture" />
+          </div>
+    
+          <div class="hamburger-menu" onclick="visibleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+    
+          <div id="drawer-menu" onclick="toggleMenu()">
+            <ul>
+              <li><a href="./index.html">Publicaciones</a></li>
+              <li><a href="./create.html">Crear Post</a></li>
+              <li><a href="./categorias.html">Categorias</a></li>
+              <li><a href="./about.html">Sobre el blog</a></li>
+            </ul>
+    
+              <button id="salir-button" onclick="hideMenu()">Salir</button>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Page Content -->
+
+      <section id="post-content">
+        <h1>Viaje a la India con mi familia marcó un fin de semana maravilloso</h1>
+        <span id="username">Bloggers: Rivera Family Blog,</span>
+        <span id="fecha">Octubre 25, 2024</span>
+        <hr />
+    
+        <p class="card-text">
+          ¡Hola a todos los amantes de los viajes! Hoy quiero compartir con ustedes
+          una experiencia que superó todas mis expectativas: un viaje a la India en
+          familia. Si estás pensando en un destino exótico y lleno de contrastes,
+          ¡la India es el lugar perfecto!
+        </p>
+        <h4>La llegada a la India: un choque de sentidos</h4>
+    
+        <p>
+          Aterrizar en Delhi fue como abrir una puerta a otro mundo. El caos
+          organizado de las calles, el bullicio de los mercados, los aromas de las
+          especias... todo era nuevo y estimulante. Nuestra primera impresión fue un
+          poco abrumadora, pero al mismo tiempo, fascinante.
+        </p>
+    
+        <h4>Descubriendo la India con los cinco sentidos Vista:</h4>
+    
+        <p>
+          Los templos hindúes son una maravilla arquitectónica, con sus intrincados
+          detalles y colores vibrantes. El Taj Mahal nos dejó sin palabras, una joya
+          de la arquitectura mogola que brilla bajo el sol indio. Y qué decir de los
+          saris coloridos y los turbantes que lucen sus habitantes.
+        </p>
+    
+        <p>
+          Oído: El sonido de las campanas de los templos, la música de los músicos
+          callejeros y el bullicio de las ciudades creaban una sinfonía única.
+          Olfato: Las especias, el incienso y las flores inundaban nuestras narices
+          en cada rincón. El aroma del curry nos acompañó durante todo el viaje.
+          Gusto: La comida india es una explosión de sabores. Probamos desde el
+          delicioso butter chicken hasta el picante biryani. ¡Cada bocado era una
+          aventura!
+        </p>
+    
+        <p>
+          Tacto: Sentir la seda de un sari, caminar descalzo por las playas de Goa o
+          tocar las esculturas de los templos fue una experiencia sensorial única.
+          Momentos inolvidables Un paseo en elefante: Atravesar la selva en la
+          espalda de un elefante fue una experiencia mágica. La ceremonia del té:
+          Disfrutar de una taza de chai masala en una pequeña tienda local nos
+          permitió sumergirnos en la cultura india.
+        </p>
+    
+        <h4>Un día en Varanasi:</h4>
+    
+        Visitar la ciudad sagrada de Varanasi y presenciar las ceremonias a orillas
+        del Ganges fue una experiencia espiritual muy profunda. El caos organizado
+        de los mercados: Perdernos entre los puestos de los mercados y regatear por
+        souvenirs fue una actividad muy divertida.
+    
+        <h4>Lo que más nos sorprendió</h4>
+    
+        La amabilidad de la gente: A pesar del caos y la pobreza, los indios son
+        extremadamente amables y hospitalarios. La diversidad cultural: India es un
+        país enorme y diverso, con una gran cantidad de culturas y tradiciones. La
+        importancia de la familia: La familia es el centro de la vida en India, y se
+        nota en cada interacción.
+    
+        <h4>¿Qué llevar en la maleta? Ropa cómoda y ligera:</h4>
+        Las temperaturas en India son altas, así que la ropa de algodón y lino es
+        ideal. Calzado cómodo: Vas a caminar mucho, así que asegúrate de llevar
+        zapatos cómodos. Protector solar y repelente de insectos: Es imprescindible
+        protegerse del sol y los mosquitos. Un botiquín básico: Por si acaso te
+        sientes indispuesto. Adaptador de corriente: El voltaje en India es
+        diferente al de muchos países.
+    
+        <p>
+          ¿Cómo lo pasamos? ¡Increíble! La India nos dejó una huella imborrable. Fue
+          un viaje lleno de aventuras, risas y momentos inolvidables. Lo
+          recomendamos a todos aquellos que buscan una experiencia auténtica y
+          enriquecedora. Y tú, ¿te animarías a viajar a la India?
+        </p>
+
+        <h2>Galeria</h2>
+        <div class="galeria">
+            <img src="" alt=""><img src="" alt=""><img src="" alt=""><img src="" alt="">
+
+        </div>
+      </section>
+      
+      <script>
+        const drawerMenu = document.getElementById("drawer-menu");
+  
+        function visibleMenu() {
+          drawerMenu.style.visibility = "visible";
+        }
+        function hideMenu() {
+          drawerMenu.style.visibility = "hidden";
+        }
+      </script>
+  </body>
+</html>
